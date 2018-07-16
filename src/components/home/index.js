@@ -11,7 +11,7 @@ export default class Home extends Component {
     render() {
         return (
             <div class={style.home}>
-                <h1>Test</h1>
+                <h1>Home</h1>
                 <Card>
                     <div class={style.cardHeader}>
                         <h2 class=" mdc-typography--title">Test view</h2>
