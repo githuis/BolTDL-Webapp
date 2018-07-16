@@ -17,7 +17,7 @@ export default class App extends Component {
 		this.open = view => () => this.setState({currentView: view});
 
 		this.exit = () => { console.log("exit/logout pressed")};
-		
+
 		this.menuItems = [
 			{
 				title: "Home",
@@ -35,7 +35,7 @@ export default class App extends Component {
 	render(props, state) {
 		return (
 		    <div>
-                <Header menuItems={this.menuItems} onExit={this.exit}/>
+                <Header title={"Material boilerplate app"} menuItems={this.menuItems} onExit={this.exit}/>
 				{state.currentView}
             </div>
 		);

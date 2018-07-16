@@ -28,7 +28,7 @@ export default class Header extends Component {
 						<Toolbar.Icon menu onClick={this.openDrawer}>
                             menu
 						</Toolbar.Icon>
-						<Toolbar.Title>Quick Attend</Toolbar.Title>
+						<Toolbar.Title>{props.title || ""}</Toolbar.Title>
 					</Toolbar.Section>
 
 					<Toolbar.Section align-end>
