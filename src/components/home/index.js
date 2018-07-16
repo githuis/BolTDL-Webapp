@@ -5,7 +5,7 @@ import 'preact-material-components/Button/style.css';
 
 import Card from 'preact-material-components/Card';
 
-import style from './style.module.css';
+import style from './style.module.pcss';
 
 export default class Home extends Component {
     render() {
