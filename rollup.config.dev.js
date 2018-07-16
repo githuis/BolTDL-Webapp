@@ -5,7 +5,6 @@ import resolve  from 'rollup-plugin-node-resolve'
 import commonjs from 'rollup-plugin-commonjs'
 import buble    from 'rollup-plugin-buble'
 import html     from 'rollup-plugin-fill-html';
-import rebase   from "rollup-plugin-rebase"
 
 import nested   from 'postcss-nested';
 
