@@ -4,6 +4,9 @@ import TextField from 'preact-material-components/TextField';
 import 'preact-material-components/TextField/style.css';
 import Button from 'preact-material-components/Button';
 import 'preact-material-components/Button/style.css';
+import Card from "preact-material-components/Card";
+import 'preact-material-components/Card/style.css';
+import style from "./style.module.pcss";
 
 export default class Login extends Component {
     constructor(props) {
@@ -31,15 +34,17 @@ export default class Login extends Component {
 
     render(props, state) {
         return (
-            <span>
-                <form onSubmit={this.submit}>
-                <TextField label="Username" name="username"/>
-                <TextField label="Password" name="password" type="password"/>
-                <Button type="submit">Log In</Button>
-            </form>
-                <Button onClick={()=> props.openRegister()}>Register</Button>
-            </span>
-
+            <Card className={style.login}>
+                <h2>Login</h2>
+                <span>
+                    <form onSubmit={this.submit}>
+                    <TextField label="Username" name="username" className={style.field}/>
+                    <TextField label="Password" name="password" type="password" className={style.field}/><br/>
+                    <Button type="submit">Log In</Button>
+                </form>
+                    <Button onClick={()=> props.openRegister()}>Register</Button>
+                </span>
+            </Card>
         )
 
     }

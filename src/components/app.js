@@ -36,7 +36,7 @@ export default class App extends Component {
 	}
 
     componentWillMount(){
-        fetch('/sesseion', {
+        fetch('/session', {
             credentials: "same-origin",
         }).then(response => {
             if(response.ok){

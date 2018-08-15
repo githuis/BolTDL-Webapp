@@ -15,10 +15,6 @@ export default class Home extends Component {
         super(props);
 
 
-        this.state = {
-            categories: [],
-            current: undefined
-        };
         this.categories = [
             {
                 Id:"1",
@@ -69,6 +65,12 @@ export default class Home extends Component {
         ];
         //this.card = Card("Hi there", "Festives");
 
+
+        this.state = {
+            categories: this.categories,
+            current: undefined
+        };
+
         this.selectCategory = categories => () => {
             this.setState({categories})
         }
@@ -88,6 +90,8 @@ export default class Home extends Component {
                         }
                         a[e.Category].push(e);
                     }, {});
+                    console.log("Categories");
+                    console.log(categories);
                     this.setState({categories});
                 })
             }
@@ -98,13 +102,15 @@ export default class Home extends Component {
         return (
             <div class={style.home}>
                 <div>
-                    { state.categories.length !== 0 &&  <Tabs>
+                    { state.categories.length !== 0 && (state.current = state.categories[0]) && console.log(state.cagetories)}
+
+                    { state.categories.length !== 0 && <Tabs>
                         {state.categories.map(c => <Tabs.Tab onClick={this.selectCategory(c)}>{c.Name}</Tabs.Tab>)}
                     </Tabs> }
                 </div>
 
                 <h1>Home</h1>
-                {state.current && state.current.map((item) => {
+                {state.current && state.current.Items.map((item) => {
                     return(
                         <Card>
                             <h2>{item.Name}</h2>
