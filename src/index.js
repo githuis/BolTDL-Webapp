@@ -1,8 +1,8 @@
-import {h, render} from 'preact';
+import { h, render } from 'preact';
 
-import './style.css';
+import './style';
 import 'preact-material-components/Card/style.css';
 
 import App from './components/app';
 
-render(<App/>, document.body);
+render(<App />, document.body);

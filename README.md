@@ -1,9 +1,21 @@
-##Preact Rollup boilerplater with Material Components
-#####As small as i could make it while still useful
+# preact material app
 
-Using Rollup, Buble and PostCSS
-Including Material Component
+Super performant `Material` app for preact world using [preact-material-components](https://github.com/prateekbh/preact-material-components)
 
-Use `yarn run dev` or `npm run dev` for development with watch
+## CLI Commands
 
-and `yarn run build` or `npm run build` for minified production bundle
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+
+# test the production build locally
+npm run serve
+```
+
+For detailed explanation on how things work, checkout the [CLI Readme](https://github.com/developit/preact-cli/blob/master/README.md).

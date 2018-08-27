@@ -1,9 +1,9 @@
 import { h, Component } from 'preact';
 import Header from './header';
-import Home from './home';
+import Home from '../routes/home';
 import About from './about';
-import Register from "./register";
-import Login from "./login";
+import Register from "../routes/register";
+import Login from "../routes/login";
 
 export default class App extends Component {
 	constructor(props) {

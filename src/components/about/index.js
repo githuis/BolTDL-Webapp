@@ -3,7 +3,7 @@ import { h, Component } from 'preact';
 import 'preact-material-components/Card/style.css';
 import Card from 'preact-material-components/Card';
 
-import style from './style.module.pcss';
+import style from './style.css';
 
 export default class About extends Component {
     render() {

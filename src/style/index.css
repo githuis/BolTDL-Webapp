@@ -1,14 +1,14 @@
 html, body {
-  height: 100%;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  background: #FAFAFA;
-  font-family: 'Helvetica Neue', arial, sans-serif;
-  font-weight: 400;
-  color: #444;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	background: #FAFAFA;
+	font-family: 'Helvetica Neue', arial, sans-serif;
+	font-weight: 400;
+	color: #444;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 /* fallback */
@@ -35,21 +35,19 @@ html, body {
   -webkit-font-smoothing: antialiased;
 }
 
+* {
+	box-sizing: border-box;
+}
+
+#app {
+	height: 100%;
+}
 
 .mdc-theme--dark {
-  background-color: #333;
-  color: #fff;
+	background-color: #333;
+	color: #fff;
 }
 
 .mdc-theme--dark .mdc-card {
   color: #444;
-}
-
-.mdc-card {
-  padding:16px;
-  margin:10px;
-}
-
-.mdc-text-field {
-  width:100%;
 }

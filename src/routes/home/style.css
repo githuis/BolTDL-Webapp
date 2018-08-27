@@ -1,7 +1,6 @@
 .home {
   padding: 20px;
   min-height: 100%;
-  width: 100%;
 }
 
 .cardHeader {
@@ -10,4 +9,11 @@
 
 .cardBody {
   padding: 16px;
+}
+
+
+.fabadd  {
+    position: fixed !important;
+    bottom: 30px;
+    right: 30px;
 }
